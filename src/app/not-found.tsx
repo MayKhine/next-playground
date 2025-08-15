@@ -1,13 +1,14 @@
+import LinkButton from "@/components/LinkButton"
 import Link from "next/link"
 
 export default function NotFound() {
   return (
-    <div className="bg-red-400 p-10">
-      <p>Page not found</p>
+    <div className="flex flex-col items-center p-10 gap-5">
+      <p className="text-xl w-full break-words text-center">
+        Opps. This page is not found! Let's go somewhere fun!
+      </p>
 
-      <Link href="/" className="p-2 bg-green-100">
-        Go Home
-      </Link>
+      <LinkButton href="/" label="Home" width="w-50/100" />
     </div>
   )
 }

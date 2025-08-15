@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import LinkButton from "./LinkButton"
 
 const links = [
   { href: "/", label: "Home" },
@@ -17,13 +18,14 @@ export default function Nav() {
     <nav className="p-4 flex gap-4">
       {links.map(({ href, label }) => {
         return (
-          <Link
-            href={href}
-            key={href}
-            className="hover:bg-amber-200 bg-green-200 p-4 w-25 text-center font-bold rounded-xl"
-          >
-            {label}
-          </Link>
+          // <Link
+          //   href={href}
+          //   key={href}
+          //   className="hover:bg-amber-200 bg-green-200 p-4 w-25 text-center font-bold rounded-xl"
+          // >
+          //   {label}
+          // </Link>
+          <LinkButton key={href} href={href} label={label} />
         )
       })}
     </nav>

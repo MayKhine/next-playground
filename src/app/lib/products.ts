@@ -28,7 +28,6 @@ export const PRODUCTS: Product[] = [
     image: "/products/desk-plant.png",
     blurb: "Low-maintenance green buddy for your workspace.",
   },
-
   {
     slug: "salad-pod",
     name: "Salad Pod",
@@ -36,6 +35,28 @@ export const PRODUCTS: Product[] = [
     image: "/products/salad-pod.png",
     blurb:
       "A fresher way to take your salad on the go—no leaks, no soggy greens, just crisp perfection anywhere.",
+  },
+  {
+    slug: "pineapple-hat",
+    name: "Pineapple Hat",
+    price: 15,
+    image: "/products/pineapple-hat.png",
+    blurb: "Pineapple to bring some fun and color to your summer days.",
+  },
+  {
+    slug: "weather-water",
+    name: "Weather Water",
+    price: 45,
+    image: "/products/weather-water.png",
+    blurb:
+      "A mesmerizing meteorological object that changes its appearance based on daily atmospheric fluctuations.",
+  },
+  {
+    slug: "veggie-steamer",
+    name: "Microwave Veggie Steamer",
+    price: 45,
+    image: "/products/veggie-steamer.png",
+    blurb: "Stoneware steamer microwaves veggies fast, without added fat",
   },
 ]
 

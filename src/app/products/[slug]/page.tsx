@@ -27,7 +27,7 @@ export default async function ProductPage({
       </div>
       <div className="bg-pink-20 flex-col flex min-w-100">
         <p className="text-2xl font-semibold">{product.name}</p>
-        <p className="mt-2 text-slate-800  break-wordsbg-pink-100">
+        <p className="mt-2 text-slate-800  break-words bg-pink-100">
           {product.blurb}
         </p>
         <p className="pt-4 text-xl font-bold">${product.price}</p>

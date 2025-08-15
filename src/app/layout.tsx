@@ -26,15 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-dvh bg-amber-700`}
       >
-        <header>
-          <h1> I am a header</h1>
+        <header className="bg-red-300 p-4 flex justify-between ">
+          <h1 className="text-3xl font-bold self-center"> Playground</h1>
           <Nav />
         </header>
-        <main> {children}</main>
-
-        <footer>
+        <main className="flex-1 p-4"> {children}</main>
+        <footer className="bg-red-300 p-4">
           <div>© {new Date().getFullYear()} May</div>
         </footer>
       </body>

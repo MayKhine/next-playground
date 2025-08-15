@@ -28,6 +28,15 @@ export const PRODUCTS: Product[] = [
     image: "/products/desk-plant.png",
     blurb: "Low-maintenance green buddy for your workspace.",
   },
+
+  {
+    slug: "salad-pod",
+    name: "Salad Pod",
+    price: 25,
+    image: "/products/salad-pod.png",
+    blurb:
+      "A fresher way to take your salad on the go—no leaks, no soggy greens, just crisp perfection anywhere.",
+  },
 ]
 
 export const getProduct = (slug: string) => {

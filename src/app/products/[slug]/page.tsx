@@ -16,21 +16,21 @@ export default async function ProductPage({
   if (!product) return notFound()
   const imageAltText = "Picture of a " + product.name
   return (
-    <article className="flex">
-      <div>
+    <article className="flex flex-col sm:flex-row gap-4">
+      <div className="min-w-100 min-h-100 relative">
         <Image
           src={product.image}
-          width={200}
-          height={200}
+          fill
           alt={imageAltText}
-          // sizes="(max-width: 768px) 100vw, 50vw"
-          // className="object-cover"
+          className="rounded-xl"
         />
       </div>
-      <div className="bg-pink-20">
-        <h2 className="text-2xl font-semibold">{product.name}</h2>
-        <p className="mt-2 text-slate-300">{product.blurb}</p>
-        <p className="mt-4 text-xl font-bold">${product.price}</p>
+      <div className="bg-pink-20 flex-col flex min-w-100">
+        <p className="text-2xl font-semibold">{product.name}</p>
+        <p className="mt-2 text-slate-800  break-wordsbg-pink-100">
+          {product.blurb}
+        </p>
+        <p className="pt-4 text-xl font-bold">${product.price}</p>
       </div>
     </article>
   )

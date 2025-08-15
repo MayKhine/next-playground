@@ -7,8 +7,6 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/products", label: "Products" },
-  { href: "/products/waffle-socks", label: "Waffle Socks" },
-
   { href: "/test", label: "Test" },
 ]
 export default function Nav() {

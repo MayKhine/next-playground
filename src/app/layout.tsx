@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
+import Nav from "@/components/Nav"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header>
+          <h1> I am a header</h1>
+          <Nav />
+        </header>
+        <main> {children}</main>
+
+        <footer>
+          <div>© {new Date().getFullYear()} May</div>
+        </footer>
       </body>
     </html>
   )
